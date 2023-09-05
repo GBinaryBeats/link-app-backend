@@ -75,8 +75,13 @@ WSGI_APPLICATION = 'link_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        #'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql', # Exposed for collaboration purposes (test database).
+        'NAME': 'vttnylpo', # Exposed for collaboration purposes (test database).
+        'USER': 'vttnylpo', # Exposed for collaboration purposes (test database).
+        'PASSWORD': '2ENb1lob--kITqvVMIteJlUgApPk8QtN', # Exposed for collaboration purposes (test database).
+        'HOST': 'bubble.db.elephantsql.com', # Exposed for collaboration purposes (test database).
+        'PORT': '5432', # Exposed for collaboration purposes (test database).
     }
 }
 
